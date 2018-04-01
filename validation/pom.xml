@@ -11,8 +11,6 @@
 
     <artifactId>validation</artifactId>
 
-
-
     <!--web-->
     <dependencies>
         <dependency>
@@ -26,12 +24,6 @@
             <artifactId>spring-boot-starter-tomcat</artifactId>
             <version>1.5.9.RELEASE</version>
             <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>commons-beanutils</groupId>
-            <artifactId>commons-beanutils</artifactId>
-            <version>1.9.3</version>
         </dependency>
     </dependencies>
 </project>
