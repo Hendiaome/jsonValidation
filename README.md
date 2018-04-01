@@ -4,6 +4,10 @@ to user it you must
 
 
 使用帮助
+-
+因简化了配置文件，所以在使用时请将包扫描设置为跟根目录即com，这样配置才能加载，如不想设置，请在spring配置文件申明
+bean class=com.zhaotm.framework.validaion.configuration.WebConfig
+
 0.下载项目，编译打包，成web，validation和war包。
 
 1.在自己的项目引入jar包，引入validation即可。
