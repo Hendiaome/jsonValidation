@@ -12,11 +12,14 @@ to user it you must
 
   @PostMapping("/validate")
   public Object validate(@RequestBody(code = "90000", msg = "呵呵呵") JsonRequest request) {
+  
       return 123;
   }
   
 3.在目标类上使用注解（msg为提示信息， isObjective为对象属性，即对象嵌套 ），校验类可以自己实现，实现ValidateFiled接口即可。
+
 public @interface Validation {
+
     /**默认提示信息**/
     String msg() default "";
 
@@ -38,10 +41,12 @@ public @interface Validation {
     @Validation(isObject = true, msg = "孩子不能空")
     private JsonChild child;
   }
+  
   public class JsonChild {
 
     @Validation(msg = "孩子名字不能空")
     private String name;
 }
+
 4.发起请求开始使用
 
