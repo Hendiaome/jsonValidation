@@ -11,7 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @date 2018/3/29
  */
 @EnableAutoConfiguration
-@ComponentScan()
+@ComponentScan("com")
 @SpringBootApplication
 public class SpringBoot  extends SpringBootServletInitializer {
     public static void main(String[] args) {
