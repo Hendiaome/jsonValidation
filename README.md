@@ -1,6 +1,6 @@
 # jsonValidation
 a framework  to validate json request
-to user it you must //todo
+to user it you must
 
 
 ## 使用帮助
@@ -15,7 +15,7 @@ to user it you must //todo
 #### 2.在controller使用注解（RequestBody为次项目的包，非spring）。
 ```
   @PostMapping("/validate")
-  public Object validate(@RequestBody(code = "90000", msg = "呵呵呵") JsonRequest request) {
+  public Object  validate(@RequestBody(code = "90000", msg = "呵呵呵") JsonRequest request) {
   
       return 123;
   }
